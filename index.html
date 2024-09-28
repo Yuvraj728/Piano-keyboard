@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>piano</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Add Tone.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.js"></script>
+</head>
+<body>
+  <div class="piano-container">
+    <!-- White keys -->
+    <div class="piano-key white" data-note="C4" id="keyA">A</div>
+    <div class="piano-key white" data-note="D4" id="keyS">S</div>
+    <div class="piano-key white" data-note="E4" id="keyD">D</div>
+    <div class="piano-key white" data-note="F4" id="keyF">F</div>
+    <div class="piano-key white" data-note="G4" id="keyG">G</div>
+    <div class="piano-key white" data-note="A4" id="keyH">H</div>
+    <div class="piano-key white" data-note="B4" id="keyJ">J</div>
+    <div class="piano-key white" data-note="C5" id="keyK">K</div>
+    
+    <!-- Black keys -->
+    <div class="piano-key black" data-note="C#4" id="keyW">W</div>
+    <div class="piano-key black" data-note="D#4" id="keyE">E</div>
+    <!-- No black key between E and F -->
+    <div class="piano-key black" data-note="F#4" id="keyT">T</div>
+    <div class="piano-key black" data-note="G#4" id="keyY">Y</div>
+    <div class="piano-key black" data-note="A#4" id="keyU">U</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

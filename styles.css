@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.piano-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.piano-key {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Align text closer to the top */
+  padding-top: 5px;         /* Adjust the space above the text slightly */
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+/* White keys */
+.piano-key.white {
+  width: 80px;
+  height: 250px;
+  margin: 2px;
+  background-color: #fff;
+  color: black;
+  z-index: 1;
+}
+
+/* Black keys */
+.piano-key.black {
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  background-color: #333;
+  z-index: 2;
+  color: white;
+  top: 0;
+}
+
+/* Active state for animation */
+.piano-key.active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Black key positioning */
+#keyW {
+  left: 65px;
+}
+#keyE {
+  left: 145px;
+}
+#keyT {
+  left: 305px;
+}
+#keyY {
+  left: 385px;
+}
+#keyU {
+  left: 465px;
+}
